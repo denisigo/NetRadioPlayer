@@ -4,13 +4,13 @@
 #include <stdio.h>
 #include <android/log.h>
 
-#define LOG(msg...) __android_log_print(ANDROID_LOG_DEBUG, "libmpg123-jni", msg)
-#define LOGE(msg...) __android_log_print(ANDROID_LOG_ERROR, "libmpg123-jni", msg)
+#define LOG(msg...) __android_log_print(ANDROID_LOG_DEBUG, "libdecoder-jni", msg)
+#define LOGE(msg...) __android_log_print(ANDROID_LOG_ERROR, "libdecoder-jni", msg)
 
 static jmethodID method_onNewFormatCallback;
 
 /**
-Init native decoder by initializing mpg123 and Java callbacks.
+Init native decoder by initializing libmpg123 and Java callbacks.
 */
 jint Java_com_denisigo_netradioplayer_Decoder_initNative(JNIEnv* env, jobject thiz){
     int ret;

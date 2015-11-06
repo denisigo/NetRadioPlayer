@@ -21,7 +21,7 @@ public class Decoder {
      */
     public Decoder(){
         // We use native decoder library
-        System.loadLibrary("mpg123-jni");
+        System.loadLibrary("decoder-jni");
 
         // Init native decoder
         mHandle = initNative();
